@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Mejorada</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p id="contenido">Bienvenido a mi página web interactiva </p>
+            <button id="cambiarContenido">Cambiar contenido</button>
+        </section>
+        
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Desarrollo Web</li>
+                <li>Diseño Gráfico</li>
+                <li>Marketing Digital</li>
+            </ul>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario" action="procesar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Derechos reservados &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
